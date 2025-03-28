@@ -1,131 +1,492 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-     <meta name="viewport" content="Width=device-width, initial-scale=1.0">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Poppins:wght@400;700&display=swap"
-		rel="stylesheet">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-		<link rel="stylesheet" href="css/style.css">
-		<title>Responsive</title>
-	</head>
-	<body>
-		
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Polyflex</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+ 
+  <body>
+      <!-- section header -->
+    <div class="header-top">
+      <div class="container d-flex flex-wrap justify-content-between align-items-center text-center">
+          <div class="d-flex">
+            <a href="https://www.facebook.com/p/Vente-matelas-polymousse-et-polyflex-100068067055088/?locale=fr_FR" target="_blank"><img src="img/icon-facebook.svg" alt="" class="icon-social me-4"></a>
+              <a href="https://www.instagram.com/unplugsleep/" target="_blank"><img src="img/icon-instagram.svg" alt="" class="icon-social"></a>
+          </div>
+          <div class="d-flex flex-wrap text-center">
+              <p class="me-5 mb-0"><i class="fa-solid fa-location-dot"></i> Zone Industrielle El Mghira, Rue Ben Arous, Fouchana 2082</p>
+              <p class="mb-0"><i class="fa-solid fa-phone-volume"></i> +216 70 55 60 60</p>
+          </div>
+      </div>
+  </div>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid px-4">
+            <a href="index.html" class="navbar-brand"><img src="img/polyflex-logo.png" alt="Logo"></a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-		<header id="main-header">
-				<div class="container">
-					<div class="logo"><a href="#" title="Retour a la page d'accueil"><img src="img/logo.png" alt=""></a></div>
-					<input  type="checkbox" name="" id="click">
-					<label for="click">
-						<i class="fas fa-bars"></i>
-                           
+            <div class="collapse navbar-collapse  justify-content-center" id="navbarResponsive">
+                <ul class="navbar-nav gap-5">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">À Propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#nosproduits ">Nos produits</a></li>
+                    
+                </ul>
+            </div>
+            <div class="d-flex align-items-center">
+                <button class="btn btn-panier btn-primary me-2" data-bs-toggle="modal" data-bs-target="#cartModal">
+                    Panier (<span id="cart-count">0</span>)
+                </button>
+                <button class="btn btn-contact btn-primary me-2" data-bs-toggle="modal" data-bs-target="#contactModal">
+                    <i class="fas fa-envelope"></i> Contact
+                </button>
+            </div>
+        </div>
+    </nav>    
+      </div>
+  </div>
+  <div class="header-image d-flex justify-content-center align-items-center position-relative">
+    <div class="position-relative overflow-hidden p-3 p-md-5 w-100 h-100 d-flex justify-content-center align-items-center">
+        <div class="col-md-6 p-lg-5 mx-auto my-5 text-header text-center">
+            <img class="header-img" src="img/te.svg" alt="" id="overlay-img">
+        </div>
+    </div>
+  </div>
+</header>
 
-					</label>
-					
-					<ul class="mobile">
-						<li><a href="#">Link1</a></li>
-						<li><a href="#">Link2</a></li>
-						<li><a href="#">Link3</a></li>
-						<li><a href="#">Link4</a></li>
-						<li><a href="#">Link5</a></li>
-					</ul>
-				</div>
-		</header>
+  <!-- carte animé -->
+<section class="container carte-anime">
+  <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-5 ">
 
-		<nav id="main-menu" class="desktop">
+    <div class="col ">
+      <div class="card card-cover h-100 overflow-hidden text-white bg-white rounded-4 shadow-lg">
+        <div class="d-flex flex-column h-100 p-4 pb-3 text-white text-shadow-1">
+          <div class="image-wrapper">
+            <img class="illustration-1 img-fluid" src="img/matelas-mousse-noir-blanc.png" alt="Matelas noir et blanc">
+            <img class="illustration-2 img-fluid" src="img/matelas-mousse.png" alt="Matelas couleur">
+          </div>
+          <h3 class=" mt-3 mb-2 text-center text-primary fw-bold">MATELAS À DENSITÉ VARIABLE</h3>
+        </div>
+      </div>
+    </div>
+ 
+    <div class="col">
+      <div class="card card-cover h-100 overflow-hidden text-white bg-white rounded-4 shadow-lg">
+        <div class="d-flex flex-column h-100 p-4 pb-3 text-shadow-1">
+          <div class="image-wrapper">
+            <img class="illustration-1 img-fluid" src="img/matelas-a-ressorts-bonnell-noir-blanc.png" alt="Matelas noir et blanc">
+            <img class="illustration-2 img-fluid" src="img/matelas-a-ressorts-bonnell.png" alt="Matelas couleur">
+          </div>
+          <h3 class=" mt-3 mb-2 text-primary text-center fw-bold">MATELAS À RESSORTS BONNELL</h3>
+        </div>
+      </div>
+    </div>
 
-			<div class="container">
-				<ul class="flex">
-					<li><a href="#">Link1</a></li>
-					<li><a href="#">Link2</a></li>
-					<li><a href="#">Link3</a></li>
-					<li><a href="#">Link4</a></li>
-					<li><a href="#">Link5</a></li>
-				</ul>
-			</div> <!-- .container -->
-		</nav>
+    <div class="col">
+      <div class="card card-cover h-100 overflow-hidden text-white bg-white rounded-4 shadow-lg">
+        <div class="d-flex flex-column h-100 p-4 pb-3 text-shadow-1">
+          <div class="image-wrapper">
+            <img class="illustration-1img-fluid" src="img/matelas-a-ressorts-ensachés-noir-blanc.png" alt="Matelas noir et blanc">
+            <img class="illustration-2 img-fluid" src="img/matelas-a-ressorts-ensachés.png" alt="Matelas couleur">
+          </div>
+          <h3 class=" mt- mb-2 text-primary  text-center fw-bold">MATELAS À RESSORTS ENSACHÉS</h3>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
 
 
 
-		<div id="main-content">
+    <div class="container mt-5">
+      <div class="p-5 text-center  rounded-3">
+        <h2 id="nosproduits">Nos produits</h2>
+        <div class="divider-custom d-flex align-items-center justify-content-center w-100 my-4">
+          <div class="divider-custom-line"></div>
+          <div class="divider-custom-icon"><i class="fa-solid fa-moon"></i></div>
+          <div class="divider-custom-line"></div>
+      </div>
+        <h3 class="text-primary ">Prêt pour un sommeil de tout repos sur nos matelas?</h3>
+   
+        <h3 class="text-primary">
+          Découvrez notre collection de matelas conçus pour offrir un confort optimal et un soutien parfait.
+        </h2>
+       
+      </div>
+    </div>
+
+     <!-- Section Produits -->
+  <div class="product-container">
+    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 g-5" id="products">
+        <!-- Les produits seront insérés ici dynamiquement -->
+    </div>
+</div>
+<div class="container pt-6 text-center">
+<div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 g-5" id="products">
+</div>
+</div>
 
 
-			<div class="container flex">
+<!-- section vidéo -->
 
-				<main> 
+<div class=" row featurette-heading video-row  text-align-center justify-content-center">
+  <div class="col-md-4 d-flex flex-column justify-content-center align-items-center">
+    <h2 class="video-titre text-white fw-normal text-center">Votre confort commence ici !</h2>
+  </div>
+  <div class="col-md-8 embed-responsive embed-responsive-16by9">
+  <video class="embed-responsive-item" src="img/polyflex-video.mp4"  autoplay muted loop playsinline allowfullscreen></video>
+  </div> 
+</div>
+    
+<!-- GUARANTEE ICON -->
+<div class="row container justify-content-center align-items-center mt-6">
+  <div class="col-lg-2 col-md-4 col-6 text-center">
+      <img class="guarantee-icon img-fluid" src="img/polyflex-icone-1.png" alt="Matelas noir et blanc">
+  </div>
+  <div class="col-lg-2 col-md-4 col-6 text-center">
+      <img class="guarantee-icon img-fluid" src="img/polyflex-icone-2.png" alt="Matelas noir et blanc">
+  </div>
+  <div class="col-lg-2 col-md-4 col-6 text-center">
+      <img class="guarantee-icon img-fluid" src="img/polyflex-icone-3.png" alt="Matelas noir et blanc">
+  </div>
+  <div class="col-lg-2 col-md-4 col-6 text-center">
+      <img class="guarantee-icon img-fluid" src="img/polyflex-icone-4.png" alt="Matelas noir et blanc">
+  </div>
+  <div class="col-lg-2 col-md-4 col-6 text-center">
+      <img class="guarantee-icon img-fluid" src="img/polyflex-icone-5.png" alt="Matelas noir et blanc">
+  </div>
+</div>
+<div class="row container justify-content-center align-items-center mt-5 mb-6">
+  <div class="col-lg-2 col-md-4 col-6 text-center">
+      <img class="guarantee-icon img-fluid" src="img/polyflex-icone-6.png" alt="Matelas noir et blanc">
+  </div>
+  <div class="col-lg-2 col-md-4 col-6 text-center">
+      <img class="guarantee-icon img-fluid" src="img/polyflex-icone-7.png" alt="Matelas noir et blanc">
+  </div>
+  <div class="col-lg-2 col-md-4 col-6 text-center">
+      <img class="guarantee-icon img-fluid" src="img/polyflex-icone-8.png" alt="Matelas noir et blanc">
+  </div>
+  <div class="col-lg-2 col-md-4 col-6 text-center">
+      <img class="guarantee-icon img-fluid" src="img/polyflex-icone-9.png" alt="Matelas noir et blanc">
+  </div>
+  <div class="col-lg-2 col-md-4 col-6 text-center">
+      <img class="guarantee-icon img-fluid" src="img/polyflex-icone-10.png" alt="Matelas noir et blanc">
+  </div>
+</div>
 
-					<article class="flex">
-						
-						<img class="image" src="img/image.png" alt="">
-						
-						
-						<div class="content">
-							<h2>This is a Lorem Ipsum  Heading</h2>
-							<p>Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. </p>
-							<p><a href="#">Read More</a></p>
-						</div>
 
-					</article>
-					<article class="flex">
-						
-						<img class="image" src="img/image.png" alt="">
-						
-						
-						<div class="content">
-							<h2>This is a Lorem Ipsum  Heading</h2>
-							<p>Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. </p>
-							<p><a href="#">Read More</a></p>
-						</div>
+<!-- avis clients -->
+<section class="container">
+  <div class="row d-flex justify-content-center">
+    <div class="col-md-10 col-xl-8 text-center">
+      <h2>Ce Que Nos Clients Pensent de Nous</h2>
+      <div class="divider-custom d-flex align-items-center justify-content-center w-100 my-4">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon"><i class="fa-solid fa-moon"></i></div>
+        <div class="divider-custom-line"></div>
+    </div>
+    </div>
+  </div>
+  <div class="row text-center d-flex align-items-stretch container mt-4">
+    <div class="col-md-4 mb-5 mb-md-0 d-flex align-items-stretch">
+      <div class="card testimonial-card">
+        <div class="card-up" style="background-color: #162139"></div>
+        <div class="avatar mx-auto bg-white">
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp"
+            class="rounded-circle img-fluid" />
+        </div>
+        <div class="card-body">
+          <h4 class="mb-4">Nesrine M.</h4>
+          <hr />
+          <p class="dark-grey-text mt-4">
+            <i class="fas fa-quote-left pe-2"></i>Depuis mon achat nous dormons comme des bébés. Le lit est super beau et surtout installation en un rien de temps. Livraison rapide et service impeccable. Je recommande ces produits à 110%.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-5 mb-md-0 d-flex align-items-stretch">
+      <div class="card testimonial-card">
+        <div class="card-up" style="background-color: #162139;"></div>
+        <div class="avatar mx-auto bg-white">
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp"
+            class="rounded-circle img-fluid" />
+        </div>
+        <div class="card-body">
+          <h4 class="mb-4">Yasmine D.</h4>
+          <hr />
+          <p class="dark-grey-text mt-4">
+            <i class="fas fa-quote-left pe-2"></i>Excellent matelas, très confortable et de grande qualité. 🌙💤 Service client au top et livraison rapide. Je recommande vivement ! 👌
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-0 d-flex align-items-stretch">
+      <div class="card testimonial-card">
+        <div class="card-up" style="background-color: #162139;"></div>
+        <div class="avatar mx-auto bg-white">
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp"
+            class="rounded-circle img-fluid" />
+        </div>
+        <div class="card-body">
+          <h4 class="mb-4">Slim C.</h4>
+          <hr />
+          <p class="dark-grey-text mt-4">
+            <i class="fas fa-quote-left pe-2"></i> C'est le deuxième matelas que nous achetons chez Polyflex- nous avons décidé d'en acheter un pour notre chambre d'amis, afin de s'assurer que nos invités ai le meilleur sommeil possible. Confort exemplaire.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-					</article>
 
-					<article class="flex">
-						
-						<img class="image" src="img/image.png" alt="">
-						
-						
-						<div class="content">
-							<h2>This is a Lorem Ipsum  Heading</h2>
-							<p>Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. </p>
-							<p><a href="#">Read More</a></p>
-						</div>
 
-					</article>
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-body-tertiary text-muted mt-6">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom container">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Restez connecter:</span>
+    </div>
+    <!-- Left -->
 
-				</main>
+    <!-- Right -->
+    <div>
+      <a href="https://www.facebook.com/p/Vente-matelas-polymousse-et-polyflex-100068067055088/?locale=fr_FR" target="_blank" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://www.instagram.com/unplugsleep/" target="_blank" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
 
-				
-				
-				<aside>
-					<nav id="nav-content">
-						<h3>Sidebar Links</h3>
-						
-							<ul>
-								<li><a href="#">Link1</a></li>
-								<li><a href="#">Link2</a></li>
-								<li><a href="#">Link3</a></li>
-								<li><a href="#">Link4</a></li>
-							</ul> 
-					</nav>	
-					
-						<h3>Other Widgets</h3>
-						<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. </p>
-						<p>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. </p>
-					
-				</aside>
-			</div> <!-- .container flex -->
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+         <img src="img/polyflex-logo.png" alt="">
+        </div>
+        <!-- Grid column -->
 
-				
-		</div> <!-- #main-content -->		
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Produits
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Matelas Polymousse</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Matelas Polyflex</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Sommiers</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Oreillers</a>
+          </p>
+        </div>
+        <!-- Grid column -->
 
-		<footer class="footer">
-			<div class="container">
-				<p>Copyright <a href="#">YourSite</a>. All rights reserved.</p>
-			</div>
-		</footer>	
-		
-		
-		</body>
-	</html>
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Liens Utiles
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Promotions & Offres Spéciales</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Politique de Retour</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">FAQ</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Avis Clients</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Livraison & Retours</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><i class="fas fa-home me-3"></i>  Zone Industrielle El Mghira, Rue Ben Arous</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            polyflex@gmail.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i>  +216 70 55 60 60</p>
+          <p><i class="fas fa-print me-3"></i>  +216 70 55 60 61</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4 mentions-legales">
+    © POLYFLEX 2025:
+    <a href="#" class="text-reset fw-bold" data-bs-toggle="modal" data-bs-target="#legalModal">MENTIONS LÉGALES</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+     
+
+<!-- Modal  voir détails -->
+<div class="modal fade modal-lg" id="productModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal-title"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" id="modal-body">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary add-to-cart" id="add" data-bs-dismiss="modal">Ajouter au panier</button>
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fermer</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <!-- Modal  Panier -->
+<div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title fs-5" id="exampleModalLabel">Votre panier</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul id="cart" class="list-group"></ul>
+        <p class="mt-3"><strong>Total: </strong></p>
+        <span id="total">0</span>$</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fermer</button>
+        <button type="button" id="clear-cart" class="btn btn-primary" data-bs-dismiss="modal">Vider le Panier</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div>
+
+  <!-- fleche en haut -->
+  <svg class="arrow" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" fill="#F33C3C" stroke="#F33C3C"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>arrow-up-square</title> <desc>Created with Sketch Beta.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage"> <g id="Icon-Set-Filled" sketch:type="MSLayerGroup" transform="translate(-518.000000, -985.000000)" fill="#F33C3C"> <path d="M540.535,1000.535 C540.145,1000.926 539.512,1000.926 539.121,1000.535 L535,996.414 L535,1007 C535,1007.55 534.552,1008 534,1008 C533.447,1008 533,1007.55 533,1007 L533,996.414 L528.879,1000.535 C528.488,1000.926 527.854,1000.926 527.465,1000.535 C527.074,1000.146 527.074,999.512 527.465,999.121 L533.121,993.465 C533.361,993.225 533.689,993.15 534,993.205 C534.311,993.15 534.639,993.225 534.879,993.465 L540.535,999.121 C540.926,999.512 540.926,1000.146 540.535,1000.535 L540.535,1000.535 Z M546,985 L522,985 C519.791,985 518,986.791 518,989 L518,1013 C518,1015.21 519.791,1017 522,1017 L546,1017 C548.209,1017 550,1015.21 550,1013 L550,989 C550,986.791 548.209,985 546,985 L546,985 Z" id="arrow-up-square" sketch:type="MSShapeGroup"> </path> </g> </g> </g></svg>
+</div>
+
+<!-- Modal  Contact -->
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="contactModalLabel">Formulaire de Contact</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <form id="contactForm" novalidate>
+                  <div class="mb-3">
+                      <label for="contactName" class="form-label">Nom :</label>
+                      <input type="text" class="form-control form-control-lg" id="contactName" required>
+                      <div class="invalid-feedback"></div>
+                  </div>
+
+                  <div class="mb-3">
+                      <label for="contactEmail" class="form-label">Courriel :</label>
+                      <input type="email" class="form-control form-control-lg" id="contactEmail" required>
+                      <div class="invalid-feedback"></div>
+                  </div>
+
+                  <div class="mb-3">
+                      <label for="contactMessage" class="form-label">Message :</label>
+                      <textarea class="form-control form-control-lg" id="contactMessage" rows="4" required></textarea>
+                      <div class="invalid-feedback"></div>
+                  </div>
+
+                  <input type="submit" class="btn btn-primary" value="Envoyer">
+              </form>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- Modal mentions légales -->
+<div class="modal fade" id="legalModal" tabindex="-1" aria-labelledby="legalModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="legalModalLabel">Mentions Légales</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h6><strong>Introduction</strong></h6>
+        <p>Les présentes mentions légales ont pour but de vous informer des règles d'utilisation du site.</p>
+        
+        <h6><strong>Propriétaire du site</strong></h6>
+        <p>Le site <a href="https://polyflex.tn/" target="_blank">https://polyflex.tn/</a> est édité par la société <strong>Sollerto</strong>, dont le siège social est situé à 12 rue Dalou, 75015 Paris, FRANCE.</p>
+        
+        <h6><strong>Responsable de publication</strong></h6>
+        <p>Le responsable de publication du site est l'équipe Sollerto</p>
+        
+        <h6><strong>Hébergement</strong></h6>
+        <p>Le site est hébergé par <strong>OVH HEBERGEMENT INC</strong>, situé à 1801, avenue McGill College, Bureau 800, Montréal (Québec) H3A 2N4, Canada.</p>
+        
+        <h6><strong>Données personnelles</strong></h6>
+        <p>Les informations personnelles collectées sur ce site sont utilisées uniquement dans le cadre de la gestion des services proposés. Vous disposez d'un droit d'accès, de rectification et de suppression de vos données personnelles, conformément à la législation en vigueur (Règlement Général sur la Protection des Données - RGPD).</p>
+        
+        <h6><strong>Propriété intellectuelle</strong></h6>
+        <p>Le contenu du site, y compris les textes, images, logos et vidéos, est protégé par les lois sur la propriété intellectuelle et les droits d'auteur. Toute reproduction ou utilisation non autorisée du contenu est interdite sans l'accord préalable de la société Sollerto.</p>
+        
+        <h6><strong>Limitation de responsabilité</strong></h6>
+        <p>Le site <strong>https://polyflex.tn/</strong> ne peut être tenu responsable des dommages directs ou indirects causés par l'utilisation du site, notamment en cas d'erreurs, d'interruptions de service, de bugs, ou d'impossibilité d'accès au site.</p>
+        
+        <h6><strong>Modifications</strong></h6>
+        <p>Les présentes mentions légales peuvent être modifiées à tout moment, sans préavis. Il est recommandé de consulter régulièrement cette page pour prendre connaissance des éventuelles mises à jour.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fermer</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>

@@ -1,0 +1,271 @@
+.container{
+  max-width:$container-width;
+  margin: 0 auto;
+}
+.product-container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.icon-social {
+  width: 25px;
+  height: 25px;
+}
+.nav-link {
+  font-weight: bold;
+  color: $primary;
+  font-size: 1.6rem;
+}
+
+.header-top {
+  background-color: $primary;
+  color: $nav;
+  font-size: 0.9rem;
+  padding: 0.7rem 0;
+}
+
+.btn-panier{
+  background-color: $secondary;
+  border: $secondary;
+  color: $nav;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.btn-contact{
+  background-color: $primary;
+  color: $nav;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+h1{
+  color: $primary;
+  font-weight: bold;
+}
+h2{
+  color: $primary;
+  font-weight: bold;
+}
+h3{
+  color: $nav;
+}
+
+.header-img{
+  width: 500px;
+
+}
+#overlay-img {
+  position: absolute;
+  top: 24px; 
+  right: 100px;
+  width: 500px; 
+  height: auto;
+}
+
+
+.header-image{
+  background: url(../imG/img-hero.webp);
+  width: 100%;
+  height: 90vh;
+background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header-image::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.card-title{
+  color: $primary;
+  font-weight: bold;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+}
+.card-prix{
+  font-weight: bold;
+}
+.icon-cart {
+  fill: $secondary;
+}
+.btn-card:hover{
+background-color: $secondary;
+border-color: $secondary;
+}
+
+.card-description{
+  text-align: justify;
+}
+
+.header_top {
+  background-color: $primary;
+  color: $nav;
+}
+
+.header_top p {
+  color: $nav;
+}
+
+
+.navbar-collapse ul li a:hover {
+  color: $secondary;
+}
+
+ 
+  .carte-anime{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 30px;
+    margin-top: -150px;
+  }
+  .image-wrapper {
+    position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+  overflow: hidden;
+  }
+  
+  .image-wrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .illustration-2 {
+    opacity: 0;
+  }
+  
+  .image-wrapper:hover .illustration-1 {
+    opacity: 0;
+  }
+  
+  .image-wrapper:hover .illustration-2 {
+    opacity: 1;
+  }
+
+  .divider-custom .divider-custom-line
+{
+    width: 100%;
+    height: 0.3rem;
+    background-color: $secondary;
+    border-radius: 1rem;
+    max-width: 8rem;
+    margin: 0 0.5rem;
+}
+
+.testimonial-card .card-up {
+  height: 120px;
+  overflow: hidden;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+.testimonial-card .avatar {
+  width: 110px;
+  margin-top: -60px;
+  overflow: hidden;
+  border: 3px solid #fff;
+  border-radius: 50%;
+}
+
+  .video-row{
+    background-color: $primary;
+  }
+  video {
+    display: block;
+    width: 100%;
+    height: auto; 
+}
+.video-titre{
+  font-size : 5rem;
+  margin: 0 6rem;
+}
+  .featurette-heading{
+    font-size: 5rem;
+  }
+
+  .btn-card{
+    font-size: 1.2rem;
+  }
+  
+  .carousel-background{
+    background-image: url(../img/polyflex-3-confort-matelas-mattress-hotel-tunisie-haut-de-gamme.jpg);
+  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+  }
+  .testimonial-section{
+    background-color: $primary;
+  }
+  .testimonial-icon{
+    width: 100px;
+  }
+.guarantee-icon{
+  width: 120px;
+  margin: 10px 0;
+}
+
+
+    
+   
+   
+
+ footer{
+  background-color: $nav;
+ }
+ footer-bottom{
+  background-color: $primary;
+ }
+ .arrow{
+  width: 50px;
+align-items: center;
+justify-content: center;
+transition: all 1s ease-in-out;
+position: fixed;
+bottom: 80px;
+right: 50px;
+visibility: hidden;
+
+ }
+
+ .arrow:hover {
+
+  fill:"#162139";
+cursor: pointer;
+}
+.display {
+visibility: visible;
+
+}
+
+.mentions-legales{
+  background-color: $primary;
+  color: $nav;
+}
+
+.mentions-legales a{
+  text-decoration: none;
+}
+.mentions-legales a:hover{
+  color: $secondary !important;
+}
+.text-reset{
+  text-decoration: none;
+
+}
+

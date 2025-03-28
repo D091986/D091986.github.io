@@ -1,0 +1,44 @@
+[
+    {
+    "id": 1,
+    "nom": "Dorso Sleep",
+    "prix": 899,
+    "description": "Le matelas Dorsosleep assure un soutien optimal et un confort idéal grâce à sa mousse haute densité. Il s'adapte aux contours du corps pour un sommeil réparateur et agréable, tout en offrant une excellente durabilité.",
+    "img": "img/img-matelas-1-dorso.png"
+},
+{
+    "id": 2,
+    "nom": "Moon Sleep",
+    "prix": 499,
+    "description": "Le matelas Moon Sleep combine confort et soutien grâce à sa mousse de haute qualité. Il s'adapte parfaitement à la morphologie pour offrir un sommeil réparateur et agréable, tout en garantissant une grande durabilité.",
+    "img": "img/img-matelas-2-moon.png"
+},
+{
+    "id": 3,
+    "nom": "Rêve Sleep",
+    "prix": 670,
+    "description": "Le matelas Rêve Sleep offre un confort supérieur et un soutien optimal grâce à sa mousse de qualité. Il épouse les contours du corps pour un sommeil réparateur et agréable, tout en assurant une excellente longévité.",
+    "img": "img/img-matelas-3-reve.png"
+},
+{
+    "id": 4,
+    "nom": "Noom",
+    "prix": 580,
+    "description": "Le matelas Noom garantit un confort optimal et un soutien précis grâce à sa technologie innovante. Il s’adapte parfaitement à la morphologie pour offrir un sommeil réparateur et durable.",
+    "img": "img/img-matelas-4-swan-noom.png"
+},
+{
+    "id": 5,
+    "nom": "Easy Sleep",
+    "prix": 930,
+    "description": "Le matelas Easy Sleep offre un confort exceptionnel et un soutien adapté grâce à sa mousse de qualité. Il s'ajuste parfaitement à votre corps pour un sommeil réparateur et agréable, tout en étant durable.",
+    "img": "img/img-matelas-5-swan-easy-sleep.png"
+},
+{
+    "id": 6,
+    "nom": "Aurore",
+    "prix": 980,
+    "description": "Le matelas Easy Sleep offre un confort exceptionnel et un soutien adapté grâce à sa mousse de qualité. Il s'ajuste parfaitement à votre corps pour un sommeil réparateur et agréable, tout en étant durable.",
+    "img": "img/img-matelas-6-swan-aurore.png"
+}
+]
